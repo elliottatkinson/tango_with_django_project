@@ -4,10 +4,10 @@ from rango.models import Category, Page
 class PageAdmin(admin.ModelAdmin):
 
     fieldsets = [
-        (None, {'fields': ['title']}),
-        (None, {'fields': ['category']}),
-        (None, {'fields': ['url']})
-    ]
+       (None, {'fields': ['title']}),
+       (None, {'fields': ['category']}),
+       (None, {'fields': ['url']})
+   ]
 
     list_display = ('title', 'category', 'url')
 
